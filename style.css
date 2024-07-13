@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: mons;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+@font-face {
+    font-family: mons;
+    src: url(/Montserrat-VariableFont_wght.ttf);
+}
+
+.booking{
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/assets/Group\ 58.png);
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+}
+
+.dummy{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    /* opacity: .8; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.booking-confirm{
+    width: 27vw;
+    height: 15vw;
+    background-color: white;
+    border-radius: 50px;
+    padding: 2vw;
+    display: flex;
+}
+
+.left-container{
+    width: 20%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-container i{
+    font-size: 7vh;
+    color: #0ED469;
+}
+
+.right-container{
+    width: 80%;
+    height: 100%;
+    /* background-color: crimson; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1vw;
+}
+
+.right-container h2{
+    font-size: 3.5vh;
+    font-weight: 600;
+    color: #466DD0;
+}
+
+.right-container p{
+    font-size: 2.5vh;
+    margin-top: 1vh;
+    color: #466DD0;
+}
+
+@media (min-width:1px) and (max-width:430px){
+    .booking{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+
+    .dummy{
+        width: 100%;
+        height: 100%;
+    }
+
+    .booking-confirm{
+        width: 90%;
+        height: 25vh;
+        border-radius: 12px;
+    }
+
+    .right-container h2{
+        font-size: 3vh;
+    }
+
+    .right-container p{
+        font-size: 2.2vh;
+    }
+}
